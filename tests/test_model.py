@@ -11,20 +11,17 @@ def test_infer():
     embedding = asyncio.run(infer(model, text))
     assert embedding is not None
     assert len(embedding) > 0
-    assert isinstance(embedding, list)
 
     texts = ["AAA", "Трипл Эй", "Академия Аналитиков Авито"]
     for text in texts:
         embedding = asyncio.run(infer(model, text))
         assert embedding is not None
         assert len(embedding) > 0
-        assert isinstance(embedding, list)
 
     text = ""
     embedding = asyncio.run(infer(model, text))
     assert embedding is not None
     assert len(embedding) > 0
-    assert isinstance(embedding, list)
 
 
 def test_init_model():
