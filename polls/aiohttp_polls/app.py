@@ -37,5 +37,6 @@ async def health_handler(responce):
 
 
 app.add_routes([web.post("/embed", embed_handler), web.get("/health", health_handler)])
+app.on_startup.append(on_startup)
 
 web.run_app(app, host ="0.0.0.0", port=8000)
