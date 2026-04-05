@@ -28,8 +28,8 @@ curl -X POST http://localhost:8000/embed -H "Content-Type: application/json" -d 
 curl -X POST http://localhost:8000/embed -H "Content-Type: application/json" -d '{"text": ["А", "А", "А"]}'
 ```
 
-Возвращает json вида '''python {'embeddings' : [...]}'''
-Где внутри списка находятся эмбеддинги в порядке их следования в json-запросе, который должен иметь вид: '''python {'text' : [...]}'''
+Возвращает json вида ```python {'embeddings' : [...]}```
+Где внутри списка находятся эмбеддинги в порядке их следования в json-запросе, который должен иметь вид: ```python {'text' : [...]}```
 Ключом может быть или список текстов, или один текст строкой
 
 ## Метрики
